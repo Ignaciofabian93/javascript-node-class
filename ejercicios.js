@@ -10,3 +10,10 @@
 
 // TEXTO:
 // "Hola mundo, este es el tercer ejercicio de programación. Me gusta la programación, es lo mejor del mundo"
+
+// EJERCICIO 4
+// array = [1,2,3,4,5,6,7,8,9,10]
+// DADO UN ARRAY, DEVOLVER UN ARRAY CON LOS ELEMENTOS MULTIPLOS DE 3
+
+// EJERCICIO 5
+// USANDO EL MISMO ARRAY (VALORES DE 0 A 10) RETORNAR LETRAS DEL ALFABETO EN LUGAR DE NUMEROS

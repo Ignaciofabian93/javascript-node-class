@@ -203,11 +203,11 @@ const arr6 = [1, 2, 3, 8, 5, 6, 7, 4, 9, 10, 11];
 //   console.log("con el for", arr6[i]);
 // }
 
-const tabla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-console.log(tabla.map((n) => `2 * ${n} = ${n * 2}`));
+// const tabla = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(tabla.map((n) => `2 * ${n} = ${n * 2}`));
 
-const string = "ana";
+// const string = "ana";
 
-const espalindromo = string.split("").reverse().join("");
+// const espalindromo = string.split("").reverse().join("");
 
-console.log(string === espalindromo);
+// console.log(string === espalindromo);
