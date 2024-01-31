@@ -1,4 +1,6 @@
 console.log("Hello World");
+var variable = "";
+
 // ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // TIPOS DE DATOS
 
@@ -211,3 +213,148 @@ const arr6 = [1, 2, 3, 8, 5, 6, 7, 4, 9, 10, 11];
 // const espalindromo = string.split("").reverse().join("");
 
 // console.log(string === espalindromo);
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+// LOOPS
+
+const newArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const alfabeto = ["a", "b", "c", "d"];
+
+// OBJETOS
+
+// objetos = { keys: values, keys: value}
+
+const objeto1 = { name: "David", edad: 26, profesion: "Desarrollador" };
+
+// console.log(objeto1.profesion);
+
+const objeto2 = { name: "David", edad: 26, profesion: "Desarrollador" };
+
+const objeto3 = { num: 0, num2: 0, num3: 0 };
+// METODOS DE OBJETOS
+
+// [[num: 0], [num2: 0], [num3: 0]]; ENTRIES
+
+// [0, 0, 0] VALUES
+
+// [num, num2, num3] KEYS
+
+// console.log(Object.values(objeto3).every((el, i) => el === 0));
+
+objeto3.nombre = "Carlos";
+
+// console.log(objeto3);
+// ESTE METODO PUEDE SERVIR PARA VERIFICAR FORMULARIOS
+
+// FOR
+
+// for (let i = 0; i < newArray.length; i++) {
+//   console.log(newArray[i]);
+// }
+
+// FOR EACH
+
+// const iteration = newArray.forEach((element) => console.log(element + 1));
+
+// DO WHILE
+
+// while (newArray.length > 0) {
+//  console.log(newArray.pop())
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+// FUNCTIONS
+miprimeraFuncion();
+
+function miprimeraFuncion() {
+  console.log("Hola mundo");
+}
+
+const funcionFlecha = () => {
+  console.log("Hola mundo en flecha");
+};
+
+funcionFlecha();
+
+const variable2 = "Ivan";
+let variable3 = "";
+
+const newFunction = function () {
+  // variable3 = "Carlos";
+  // const variable2 = "David";
+  // return variable2;
+  // console.log(variable2);
+  // return 1234;
+};
+// console.log(newFunction());
+// console.log(variable3);
+
+const arrowFunction = ({ dividendo, divisor, multiplicador }) => {
+  // const multiplicacion = numero1 * numero2;
+  const division = dividendo / divisor;
+  const resultado = division * multiplicador;
+  // const suma = frase + (numero1 + numero2);
+  return resultado;
+};
+
+// console.log(arrowFunction({ divisor: 2, dividendo: 10, multiplicador: 3 }));
+
+// CONDICIONALES
+
+// IF ELSE
+
+// if (num > num2) {
+//   console.log("num es mayor que num2");
+// } else {
+//   console.log("no es mayor");
+// }
+
+// TERNARIAS
+
+// a > b ? a / b : "A es menor que B";
+
+const funcionFlecha2 = (a, b) => {
+  if (a > b) return a / b;
+
+  return "A es menor que B";
+  // return a > b ? a / b : "A es menor que B";
+  // if (a > b) {
+  //   return a / b;
+  // } else {
+  //   return "A es menor que B";
+  // }
+};
+
+// console.log(funcionFlecha2(10, 2));
+
+// const check = (a, b) => {
+// try {
+//   return a + b; // NaN // NO LO RECOMIENDO !!!!
+// } catch (error) {
+//   console.log("Error: ", error);
+// }
+// };
+
+// console.log(check("sajsa", 1));
+
+// const suma = ({ num1: a, num2: b }) => a - b;
+
+// console.log(suma({ num2: 4, num1: 2 }));
+
+// const checkIfNumber = (number) => {
+//   if (typeof number !== number) {
+//     return "El dato no es un numero";
+//   }
+// };
+
+// const negativeToPositive = (number) => {
+//   return checkIfNumber(number);
+// return number * -1;
+// };
+
+// console.log(negativeToPositive("Hola"));
