@@ -346,15 +346,19 @@ const funcionFlecha2 = (a, b) => {
 
 // console.log(suma({ num2: 4, num1: 2 }));
 
-// const checkIfNumber = (number) => {
-//   if (typeof number !== number) {
-//     return "El dato no es un numero";
-//   }
-// };
+const checkIfNumber = (number) => {
+  console.log(typeof number); // VERIFICAR EL TIPO DE DATO
+  if (typeof number !== number) return "Error"; // SI EL TIPO DE DATO ES NUMBER RETORNAR
+};
 
-// const negativeToPositive = (number) => {
-//   return checkIfNumber(number);
-// return number * -1;
-// };
+const negativeToPositive = (number) => {
+  const check = checkIfNumber(number); // AQUI SE LLAMA A LA FUNCION DE VERIFICAR EL TIPO DE DATO
+  // console.log(check); // SE PUEDE ASIGNAR A UNA VARIABLE PARA VERIFICAR EL TIPO DE DATO CON CONSOLE.LOG
+  if (check === "Error") return "Ingresa un numero valido"; // SE PREGUNTA POR LA CONDICION. ES ACONSEJABLE SIEMPRE PREGUNTAR POR LAS OPCIONES QUE DARIAN ERROR PRIMERO
+  // AL CUMPLIR LA CONDICION RETORNA EL STRING Y NO RETORNA LA OPERACION
+  // LAS FUNCIONES SIEMPRE TIENEN SOLO 1 RETURN POR LO QUE EL RETURN QUE SALGA SERA EL QUE CUMPLA CON ALGUNA CONDICION
+  // O EL QUE ESTE POR DEFECTO AL FINAL DEL BLOQUE
+  return number * -1; // 1
+};
 
-// console.log(negativeToPositive("Hola"));
+console.log(negativeToPositive("jasajhasj"));
