@@ -361,4 +361,60 @@ const negativeToPositive = (number) => {
   return number * -1; // 1
 };
 
-console.log(negativeToPositive("jasajhasj"));
+// console.log(negativeToPositive("jasajhasj"));
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// DESTRUCTURACION DE OBJETOS
+
+const objetoNuevo = {
+  nombre: "Carlos",
+  edad: 30,
+  profesion: "Desarrollador",
+  hobby: "Jugar con la niña",
+};
+
+// ACCEDER AL VALOR OBJETO CON NOTACION DE PUNTO
+
+// console.log(objetoNuevo.nombre);
+
+// AÑADIR PROPIEDAD CON NOTACION DE PUNTO
+// objetoNuevo.profesion = "Desarrollador";
+// console.log(objetoNuevo);
+
+// ACCEDER AL VALOR DEL OBJETO CON DESTRUCTURACION
+
+const { nombre, edad } = objetoNuevo;
+// console.log(nombre, edad);
+
+const cambiarNombreObjeto = (nuevoNombre, desc) => {
+  const nuevoObjeto = {
+    ...objetoNuevo,
+    nombre: nuevoNombre,
+    descripcion: desc,
+  };
+  // console.log(nuevoObjeto);
+};
+// cambiarNombreObjeto("Goku", "Sayayin");
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+// SET TIMEOUT
+
+const myFuncionConTiempo = () => {
+  setTimeout(() => {
+    // const objetoModificado = { ...objetoNuevo, edad: 40 };
+    // console.log(objetoModificado);
+  }, 2000); // valor del numero en milisegundos
+  return objetoNuevo;
+};
+
+// console.log(myFuncionConTiempo());
+
+// EJERCICIOS CON FUNCIONES
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// function myfuncion() {} // SE EJECUTA PRIMERO Y DESDE CUALQUIER BLOQUE
+// const funcion = () => {}; // SE EJECUTA SOLO EN DONDE FUE DEFINIDA O DESPUES Y EN SU PROPIO AMBITO DE BLOQUE
